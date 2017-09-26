@@ -7,20 +7,31 @@
  * 4. Add comments and Javadoc comments where needed
  * 5. Remove unnecessary comments as appropriate
  */
-
-public class ReclamationProject
-{
-    static String doit(String a,String b){
-        if (a.length() > b.length()){
-            String c = a; // TODO: set c to a
-            a=b; b=c;}
-        String r = (a.equals(b)) ? "" : ""; // I love the ternary operator!
+/**
+ *useless.
+ */
+public class ReclamationProject {
+    /**
+     *
+     * @param a blablabla
+     * @param b blablabla
+     * @return return statement
+     */
+    static String doit(final String a, final String b) {
+        if (a.length() > b.length()) {
+            String c = a;
+            String temp = b;
+            temp = c;
+        }
+        String r = "";
         /*
          * For loop with i
          */
-        for (int i = 0; i < a.length(); i++) { for (int j = a.length() - i; j > 0; j--) {
-                for (int k = 0; k < b.length()- j; k++) {
-                    r = (a.regionMatches(i, b, k, j) && j >r.length()) ? a.substring(i,i + j) : r; // Do it!
-                        }} // Ah yeah
+        for (int i = 0; i < a.length(); i++) {
+            for (int j = a.length() - i; j > 0; j--) {
+                for (int k = 0; k < b.length() - j; k++) {
+                    if (r = (a.regionMatches(i, b, k, j) && j > r.length()) ? a.substring(i, i + j) : r;
+                        }
+                } // Ah yeah
         } return r; }
 }
